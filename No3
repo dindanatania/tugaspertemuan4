@@ -1,0 +1,30 @@
+package tugas4.no3;
+
+import java.util.Scanner;
+
+public class Tugas4No3 {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner (System.in);
+        
+        System.out.println("Masukkan n: ");
+        int n = input.nextInt();
+        
+        int i;
+        if(n >= 0){
+            int faktorial = 1;
+            System.out.print(n+ "! = ");
+            for(i = n; i >=1; i--){
+                faktorial *= i;
+                System.out.print(i);
+                
+                if(i > 1){
+                    System.out.print(" * ");
+                }
+            }
+            System.out.print(" = "+faktorial);
+        }
+    }
+    
+}
