@@ -1,0 +1,22 @@
+package tugas4.no1;
+
+import java.util.Scanner;
+
+public class Tugas4No1 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Masukkan n: ");
+        
+        int i, n = input.nextInt();
+        
+        if(n >= 1){
+           for(i = 1; i <= n; i++){
+            System.out.println(i);
+            } 
+        }else{
+            System.out.println("Angka harus lebih dari 1");
+        } 
+    }
+}
